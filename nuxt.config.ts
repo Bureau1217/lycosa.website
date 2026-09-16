@@ -1,6 +1,37 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['nuxt-studio', '@nuxt/content'],
+  modules: [
+    'nuxt-studio', '@nuxt/content'
+  ],
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  studio: {
+    editor: {
+      components: {
+        exclude: ['HiddenComponent', 'content/prose/**']
+      },
+      commands: {
+        exclude: [
+          'blockquote',
+          'bold',
+          'bulletList',
+          'code',
+          'codeBlock',
+          'heading1',
+          'heading2',
+          'heading3',
+          'heading4',
+          'image',
+          'italic',
+          'orderedList',
+          'strike',
+          'horizontalRule',
+          'insert',
+          'paragraph',
+          'style',
+          'video',
+        ]
+      }
+    }
+  }
 })
