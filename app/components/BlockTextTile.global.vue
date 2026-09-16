@@ -41,4 +41,8 @@ defineProps<{
   top:    var(--v-gutter);
   right:  var(--v-gutter);
 }
+
+:global(.v-block-text_tile__bottom > [class*=v-block-] + [class*=v-block-]) {
+    margin-top: 2rem;
+}
 </style>
