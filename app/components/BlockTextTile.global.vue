@@ -43,6 +43,6 @@ defineProps<{
 }
 
 :global(.v-block-text_tile__bottom > [class*=v-block-] + [class*=v-block-]) {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 </style>
