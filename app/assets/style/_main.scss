@@ -18,6 +18,10 @@
   text-box: auto;
   text-box-edge: ex alphabetic;
 }
+input {
+  text-box-trim: none;
+}
+
 
 html {
   margin: 0;
