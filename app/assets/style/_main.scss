@@ -3,6 +3,7 @@
 :root {
   --v-color-white: #ffffff;
   --v-color-black: #000000;
+  --v-color-main: #227ED9;
 
   --v-gutter: 1rem;
   --v-gutter--half: calc( var(--v-gutter) / 2 );
@@ -50,6 +51,11 @@ p {
   margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
   font-size:        var(--v-font--size--base);
   line-height:      var(--v-font--lineheight--base);
+}
+
+.v-font-small {
+  font-size:        calc( var(--v-font--size--base)       /3*2 );
+  line-height:      calc( var(--v-font--lineheight--base) /3*2 );
 }
 
 
