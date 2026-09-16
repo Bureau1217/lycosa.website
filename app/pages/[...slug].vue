@@ -1,10 +1,9 @@
 <script setup lang="ts">
 const route = useRoute()
-const slug = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug
 
-const { data: page } = await useAsyncData(`page-${route.path}`, () =>
-  queryCollection('content').path(`/${slug}`).first()
-)
+const { data: page } = await useAsyncData(route.path, () => {
+  return queryCollection('content').path(route.path).first()
+})
 
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
@@ -13,7 +12,6 @@ if (!page.value) {
 
 <template>
   <div>
-    <h1>{{ page!.title }}</h1>
     <ContentRenderer :value="page!" />
   </div>
 </template>
