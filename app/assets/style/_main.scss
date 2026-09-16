@@ -1,0 +1,23 @@
+:root {
+  --v-color-white: #ffffff;
+  --v-color-black: #000000;
+
+  --v-gutter: 1rem;
+  --v-gutter--half: calc( var(--v-gutter) / 2 );
+
+}
+
+* {
+  text-box: auto;
+  text-box-edge: ex alphabetic;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
