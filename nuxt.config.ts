@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   studio: {
     editor: {
       components: {
-        exclude: ['HiddenComponent', 'content/prose/**']
+        exclude: ['Prose*']
       },
       commands: {
         exclude: [
