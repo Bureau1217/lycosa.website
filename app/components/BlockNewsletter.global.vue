@@ -49,7 +49,6 @@ function onSubmit() {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: var(--v-gutter--half);
 }
 
 .v-block-newsletter__content {

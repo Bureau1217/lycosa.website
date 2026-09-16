@@ -49,8 +49,8 @@ body {
 h2 {
   margin-top:       calc( var(--v-font--lineheight--base) * 1 );
   margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
-  font-size:        var(--v-font--size--base);
-  line-height:      var(--v-font--lineheight--base);
+  font-size:        calc( var(--v-font--size--base)       * 2 );
+  line-height:      calc( var(--v-font--lineheight--base) * 2 );
 
   a {
     color: inherit;
@@ -84,13 +84,16 @@ button {
  */
 
 .v-remove-last-and-first-child-margin {
-  &:first-child {
-    margin-top: 0 !important;
+  > * {
+    &:first-child {
+      margin-top: 0 !important;
+    }
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
   }
 
-  &:last-child {
-    margin-bottom: 0 !important;
-  }
 }
 
 /**
