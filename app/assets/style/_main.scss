@@ -7,10 +7,10 @@
   --v-gutter: 1rem;
   --v-gutter--half: calc( var(--v-gutter) / 2 );
 
-  --v-baseline--lineheight: 30px;
+  --v-baseline--lineheight: 15px;
 
-  --v-font--size--base:       .75rem;
-  --v-font--lineheight--base: 1rem;
+  --v-font--size--base:       1.65rem;
+  --v-font--lineheight--base: 2rem;
 }
 
 * {
@@ -37,6 +37,14 @@ body {
   line-height: var(--v-font--lineheight--base);
 }
 
+
+
+
+
+/**
+  TYPOGRAPHY
+ */
+
 p {
   margin-top:       calc( var(--v-font--lineheight--base) * 1 );
   margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
@@ -44,10 +52,32 @@ p {
   line-height:      var(--v-font--lineheight--base);
 }
 
+
+/**
+  UI
+ */
+
 button {
   cursor: pointer;
 }
 
+/**
+  GRID
+ */
+
+.v-remove-last-and-first-child-margin {
+  &:first-child {
+    margin-top: 0 !important;
+  }
+
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/**
+  FORM
+ */
 
 .v-form {
   display: flex;
