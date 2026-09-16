@@ -1,3 +1,5 @@
+@use "font-import";
+
 :root {
   --v-color-white: #ffffff;
   --v-color-black: #000000;
@@ -15,6 +17,7 @@
 html {
   margin: 0;
   padding: 0;
+  font-family: 'ABC_Areal', sans-serif;
 }
 
 body {
