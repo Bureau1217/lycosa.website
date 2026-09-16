@@ -7,9 +7,14 @@
   --v-gutter: 1rem;
   --v-gutter--half: calc( var(--v-gutter) / 2 );
 
+  --v-baseline--lineheight: 30px;
+
+  --v-font--size--base:       .75rem;
+  --v-font--lineheight--base: 1rem;
 }
 
 * {
+  box-sizing: border-box;
   text-box: auto;
   text-box-edge: ex alphabetic;
 }
@@ -18,9 +23,53 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'ABC_Areal', sans-serif;
+  font-size: var(--v-baseline--lineheight);
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-size: var(--v-font--size--base);
+  line-height: var(--v-font--lineheight--base);
+}
+
+p {
+  margin-top:       calc( var(--v-font--lineheight--base) * 1 );
+  margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
+  font-size:        var(--v-font--size--base);
+  line-height:      var(--v-font--lineheight--base);
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.v-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--v-gutter--half);
+
+  input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: var(--v-font--size--base);
+    line-height: var(--v-font--lineheight--base);
+    letter-spacing: inherit;
+    color: inherit;
+
+    &::placeholder {
+      color: var(--v-color-black);
+    }
+  }
+
+  button[type=submit] {
+    font-size: var(--v-font--size--base);
+    line-height: var(--v-font--lineheight--base);
+    background: transparent;
+    display: inline-block;
+    border: none;
+  }
 }
