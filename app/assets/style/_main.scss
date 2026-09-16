@@ -1,18 +1,6 @@
 @use "font-import";
 
-:root {
-  --v-color-white: #ffffff;
-  --v-color-black: #000000;
-  --v-color-main: #227ED9;
-
-  --v-gutter: 1rem;
-  --v-gutter--half: calc( var(--v-gutter) / 2 );
-
-  --v-baseline--lineheight: 15px;
-
-  --v-font--size--base:       1.65rem;
-  --v-font--lineheight--base: 2rem;
-}
+@use "css-var";
 
 * {
   box-sizing: border-box;
