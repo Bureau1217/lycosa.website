@@ -1,6 +1,17 @@
+<script setup lang="ts">
+const route = useRoute()
+
+const { data: page } = await useAsyncData(route.path, () => {
+  return queryCollection('content').path(route.path).first()
+})
+
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
+</script>
+
 <template>
   <div>
-    <h1>Lycosa</h1>
-    <p>Welcome to the Lycosa website.</p>
+    <ContentRenderer :value="page!" />
   </div>
 </template>
