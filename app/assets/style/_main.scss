@@ -17,7 +17,9 @@
 * {
   box-sizing: border-box;
   text-box: auto;
-  text-box-edge: ex alphabetic;
+  text-box-edge: cap alphabetic;
+  //text-box-edge: ex alphabetic;
+  //border: solid 1px red;
 }
 input {
   text-box-trim: none;
@@ -94,6 +96,15 @@ button {
     }
   }
 
+}
+
+.v-page-content {
+
+  > * {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+  }
 }
 
 /**

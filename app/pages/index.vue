@@ -11,7 +11,7 @@ if (!page.value) {
 </script>
 
 <template>
-  <div>
+  <div class="v-page-content">
     <ContentRenderer :value="page!" />
   </div>
 </template>
