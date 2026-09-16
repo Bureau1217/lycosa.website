@@ -37,6 +37,14 @@ body {
   TYPOGRAPHY
  */
 
+h1 {
+  text-transform: uppercase;
+  margin-top:       calc( var(--v-font--lineheight--base) * 2 );
+  margin-bottom:    calc( var(--v-font--lineheight--base) * 2 );
+  font-size:        calc( var(--v-font--size--base)       * 5 );
+  line-height:      calc( var(--v-font--lineheight--base) * 5 );
+}
+
 h2 {
   margin-top:       calc( var(--v-font--lineheight--base) * 1 );
   margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
@@ -59,6 +67,8 @@ p {
 .v-font-small {
   font-size:        calc( var(--v-font--size--base)       /3*2 );
   line-height:      calc( var(--v-font--lineheight--base) /3*2 );
+  margin-top:      calc( var(--v-font--lineheight--base) /3*2 );
+  margin-bottom:      calc( var(--v-font--lineheight--base) /3*2 );
 }
 
 

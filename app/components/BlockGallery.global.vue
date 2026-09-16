@@ -66,7 +66,7 @@ function next() {
 
 .v-block-gallery {
   position: relative;
-  height: 50vh;
+  height: 100dvh;
   width: 100%;
   padding: var(--v-gutter);
   display: flex;

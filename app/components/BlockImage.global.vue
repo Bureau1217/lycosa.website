@@ -6,12 +6,26 @@
            :src="image"
            :alt="title" />
 
-      <h1 class="v-block-image__title"
-          v-if="title"
-      >{{title}}</h1>
+      <div class="v-block-image__text-content v-remove-last-and-first-child-margin">
+        <h1 class="v-block-image__title"
+            v-if="title || subtitle"
+        >
+          <template v-if="title"
+          >{{title}}
+          </template>
 
-      <p class="v-block-image__text"
-         v-if="text">{{text}}</p>
+          <span class="v-block-image__subtitle"
+             v-if="subtitle"
+          >{{ subtitle }}</span>
+        </h1>
+
+        <div class="v-block-image__text-content__text v-remove-last-and-first-child-margin">
+          <slot />
+        </div>
+
+      </div>
+
+
 
     </section>
 </template>
@@ -23,7 +37,7 @@
 <script setup lang="ts">
 defineProps<{
   title?: string
-  text?: string
+  subtitle?: string
   image?: string
 }>()
 </script>
@@ -33,19 +47,21 @@ defineProps<{
 
 
 <style lang="scss" scoped >
+@use "~/assets/style/main";
+
 .v-block-image {
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   color: var(--v-color-white);
   position: relative;
   padding: var(--v-gutter--half);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.v-block-image__title {
-  position: relative;
-}
-.v-block-image__text {
+.v-block-image__text-content {
   position: relative;
 }
 
@@ -56,5 +72,9 @@ defineProps<{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+:global(.v-block-image__text-content__text > p) {
+    @extend .v-font-small;
 }
 </style>
