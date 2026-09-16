@@ -62,6 +62,7 @@ p {
   margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
   font-size:        var(--v-font--size--base);
   line-height:      var(--v-font--lineheight--base);
+  max-width: 25em;
 }
 
 .v-font-small {
