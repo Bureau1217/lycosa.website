@@ -17,7 +17,12 @@
           <button class="v-block-newsletter__submit"
                   type="submit"
                   aria-label="S'abonner"
-          >&rarr;</button>
+          >
+            <img src="~/assets/ui/arrow.svg"
+                 alt="S'abonner"
+                 role="button"
+            />
+          </button>
         </form>
       </div>
     </section>
@@ -54,5 +59,12 @@ function onSubmit() {
 .v-block-newsletter__content {
   text-align: right;
   background: lightgray;
+}
+
+.v-block-newsletter__submit {
+  > img {
+    display: block;
+    height: var(--v-font--size--base);
+  }
 }
 </style>
