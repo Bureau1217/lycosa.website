@@ -18,12 +18,12 @@
           <div class="v-block-gallery__prev"
                   role="button"
                   @click="prev"
-          >&larr; Previous <div class="v-block-gallery__prev__color" /></div>
+          >&larr; Previous<div class="v-block-gallery__prev__color" /></div>
 
           <div class="v-block-gallery__next"
                   type="button"
                   @click="next"
-          ><div class="v-block-gallery__next__color" /> Next &rarr;</div>
+          ><div class="v-block-gallery__next__color" />Next &rarr;</div>
         </div>
       </div>
 

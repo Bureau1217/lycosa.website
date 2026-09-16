@@ -18,10 +18,7 @@
                   type="submit"
                   aria-label="S'abonner"
           >
-            <img src="~/assets/ui/arrow.svg"
-                 alt="S'abonner"
-                 role="button"
-            />
+            &rarr;
           </button>
         </form>
       </div>
