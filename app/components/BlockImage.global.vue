@@ -74,7 +74,7 @@ defineProps<{
   object-fit: cover;
 }
 
-:global(.v-block-image__text-content__text > p) {
-    @extend .v-font-small;
-}
+//:global(.v-block-image__text-content__text > p) {
+//    @extend .v-font-small;
+//}
 </style>
