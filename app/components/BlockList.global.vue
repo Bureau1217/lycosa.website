@@ -8,7 +8,7 @@
           <div class="v-block-list__items__line" />
           <BlockListItem
             :title="item.title"
-            :text="item.subtitle"
+            :text="item.text"
           />
         </template>
 

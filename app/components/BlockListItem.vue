@@ -2,14 +2,16 @@
   <div class="v-block-list__items__item"
        @click="isOpen = !isOpen"
   >
-    <div class="v-block-list__items__item__title">
+    <div class="v-block-list__items__item__title v-remove-last-and-first-child-margin">
       {{ title }}
     </div>
 
-    <div class="v-block-list__items__item__text v-font-small"
+    <div class="v-block-list__items__item__text v-remove-last-and-first-child-margin"
          v-if="isOpen"
     >
-      {{ text }}
+      <div class="v-font-small">
+        {{ text }}
+      </div>
     </div>
   </div>
 </template>
