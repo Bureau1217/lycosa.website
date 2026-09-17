@@ -16,7 +16,7 @@
         <block-collumns>
           <template #first >
             <h5>Navigation</h5>
-            <div>
+            <div class="v-font-h5">
               <a href="#">Vision</a>
               <br/><a href="#">Distinction</a>
               <br/><a href="#">Nos montres</a>
@@ -25,7 +25,7 @@
             </div>
           </template>
           <template #second >
-            <h5>Navigation</h5>
+            <h4>Navigation</h4>
             <a href="#">Distinction</a>
             <br/><a href="#">Distinction</a>
             <br/><a href="#">Nos montres</a>
@@ -33,7 +33,7 @@
             <br/><a href="#">Presse</a>
           </template>
           <template #three >
-            <h5>Navigation</h5>
+            <h4>Navigation</h4>
             <a href="#">Distinction</a>
             <br/><a href="#">Distinction</a>
             <br/><a href="#">Nos montres</a>
