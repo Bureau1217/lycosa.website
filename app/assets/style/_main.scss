@@ -6,7 +6,6 @@
   box-sizing: border-box;
   text-box: auto;
   text-box-edge: cap alphabetic;
-  font-family: 'ABC_Areal', sans-serif;
   //text-box-edge: ex alphabetic;
   //border: solid 1px red;
 }
@@ -37,12 +36,14 @@ body {
   TYPOGRAPHY
  */
 
-h1 {
+h1, .v-font-h1 {
   text-transform: uppercase;
   margin-top:       calc( var(--v-font--lineheight--base) * 2 );
   margin-bottom:    calc( var(--v-font--lineheight--base) * 2 );
   font-size:        calc( var(--v-font--size--base)       * 5 );
   line-height:      calc( var(--v-font--lineheight--base) * 5 );
+  font-family: 'BAC_Arizona', serif;
+  font-weight: 400;
 }
 
 h2 {
@@ -50,6 +51,8 @@ h2 {
   margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
   font-size:        calc( var(--v-font--size--base)       * 2 );
   line-height:      calc( var(--v-font--lineheight--base) * 2 );
+  font-family: 'BAC_Arizona', serif;
+  font-weight: 400;
 
   a {
     color: inherit;
