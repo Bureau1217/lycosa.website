@@ -1,0 +1,1 @@
+import{F as e,m as t,z as n}from"./ygP5Hk6h.js";import{t as r}from"./BDNMzG2s.js";var i={},a={class:`v-block-empty v-remove-last-and-first-child-margin`};function o(r,i){return e(),t(`section`,a,[n(r.$slots,`default`,{},void 0,!0)])}var s=Object.assign(r(i,[[`render`,o],[`__scopeId`,`data-v-a93dad3a`]]),{__name:`BlockEmpty`});export{s as default};
