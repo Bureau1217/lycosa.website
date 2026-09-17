@@ -67,53 +67,103 @@ title: Nos montres
 ---
 ::
 
-::block-text-tile
-#top
-coucou
+::two-columns
+#left
+  :::block-text-tile
+  #top
+  Partenaires prototypage
 
-#bottom
-  :::block-collumns
-  #first
-  Cadrans
+  #bottom
+  ------
 
-  #second
-  Cadratec
+  #### Technique
 
-  #three
-  2364 St-Brais JURA
+    ::::block-collumns
+    #first
+    Cadrans
+
+    #second
+    Cadratec
+
+    #three
+    2364 St-Brais JURA
+    ::::
+
+    ::::block-collumns
+    #first
+    Inserts carbon
+
+    #second
+    Comppair
+
+    #three
+    1020 Renens VAUD
+    ::::
+
+    ::::block-collumns
+    #first
+    Coques de protections silicone
+
+    #second
+    Solvateq
+
+    #three
+    1052 Le Mont-sur-Lausanne VAUD
+    ::::
+
+    ::::block-collumns
+    #first
+    Bracelets
+
+    #second
+    Yasmina Berkane
+
+    #three
+    1202 GENÈVE
+    ::::
+
+  #### Artistique
+
+    ::::block-collumns
+    #first
+    Photos prototypes
+
+    #second
+    Sven Rass
+
+    #three
+    1202 GENÈVE
+    ::::
+
+    ::::block-collumns
+    #first
+    Vidéo prototypes
+
+    #second
+    Aristo Xanthopoulos
+
+    #three
+    1202 GENÈVE
+    ::::
+
+    ::::block-collumns
+    #first
+    Graphisme et médiamatique
+
+    #second
+    Bureau1217
+
+    #three
+    1227 Carouge GENÈVE
+    ::::
   :::
 
-  :::block-collumns
-  #first
-  Inserts carbon
+#right
+  :::block-text-tile
+  #top
+  partenaires production
 
-  #second
-  Comppair
-
-  #three
-  1020 Renens VAUD
-  :::
-
-  :::block-collumns
-  #first
-  Coques de protections silicone
-
-  #second
-  Solvateq
-
-  #three
-  Bracelets
-  :::
-
-  :::block-collumns
-  #first
-  Yasmina Berkane
-
-  #second
-  Solvateq
-
-  #three
-  1202 GENÈVE
+  #bottom
   :::
 ::
 
