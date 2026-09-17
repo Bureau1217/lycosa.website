@@ -41,7 +41,6 @@ const columnsCount = computed(() => {
 <style lang="scss" scoped >
 .v-block-collumns {
   width: 100%;
-  height: 100%;
   position: relative;
   display: flex;
   flex-wrap: nowrap;

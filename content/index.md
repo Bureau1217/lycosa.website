@@ -74,8 +74,6 @@ title: Nos montres
   Partenaires prototypage
 
   #bottom
-  ------
-
   #### Technique
 
     ::::block-collumns
@@ -102,7 +100,7 @@ title: Nos montres
 
     ::::block-collumns
     #first
-    Coques de protections silicone
+    Coques de protection silicone
 
     #second
     Solvateq
@@ -164,6 +162,37 @@ title: Nos montres
   partenaires production
 
   #bottom
+    ::::block-collumns
+    #first
+    Hourlabel SARL - OBWALD
+
+    #second
+    Cadrans, aiguilles, mouvement 5030 D Ronda, boitier montre (Tête de montre), boucles de bracelets, mousquetons, fabrication et étude étuis,  assemblage, contrôle qualité et final
+    ::::
+
+    ::::block-collumns
+    #first
+    Solvateq - VAUD
+
+    #second
+    Coques de protections et étude faisabilité
+    ::::
+
+    ::::block-collumns
+    #first
+    Comppair - VAUD
+
+    #second
+    Inserts carbon et étude de faisabilité
+    ::::
+
+    ::::block-collumns
+    #first
+    Yasmina Berkane  / Version N.2
+
+    #second
+    Commande matière première  et couture des bracelets
+    ::::
   :::
 ::
 
