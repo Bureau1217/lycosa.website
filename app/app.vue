@@ -18,6 +18,7 @@ import AppFooter from "~/components/AppFooter.vue";
   position: relative;
   background: white;
   margin-bottom: 100dvh;
+  padding: 0 var(--v-gutter--half);
 }
 
 .v-app__footer {
