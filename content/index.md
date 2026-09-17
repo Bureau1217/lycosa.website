@@ -5,7 +5,7 @@ seo:
   description: ""
 ---
 
-:block-image{image="/images/paul-cuoco-CO2vOhPqlrM-unsplash.jpg" subtitle="Watches" title="Lycosa"}
+:block-image{image="/images/pic22-6000.jpg" subtitle="Watches" title="Lycosa"}
 
 ::two-columns
 #left
@@ -61,8 +61,9 @@ seo:
 ::block-gallery
 ---
 images:
-  - image: /images/paul-cuoco-CO2vOhPqlrM-unsplash.jpg
-  - image: /favicon.ico
+  - image: /images/blue-soldier-transparent-6000.jpg
+  - image: /images/orange-soldier-transparent-6000.jpg
+  - image: /images/green-soldier-transparent-6000.jpg
 title: Nos montres
 ---
 ::
@@ -196,7 +197,7 @@ title: Nos montres
   :::
 ::
 
-::block-image{image="/images/paul-cuoco-CO2vOhPqlrM-unsplash.jpg"}
+::block-image{image="/images/pic22-6000.jpg"}
 Lycosa Watches est en pleine création.
 
 Rejoignez notre communauté et suivez l’évolution de la marque : prototypes, choix de design, tests, premières séries.

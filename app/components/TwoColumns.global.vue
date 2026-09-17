@@ -1,7 +1,7 @@
 <template>
     <section class="v-two-columns"
     >
-      <div class="v-two-columns__col">
+      <div class="v-two-columns__col v-remove-last-and-first-child-margin">
         <slot name="left" />
       </div>
       <div class="v-two-columns__col">
@@ -36,6 +36,10 @@ defineSlots<{
     }
   }
 
+}
+
+:global(.v-two-columns__col:has(.v-block-text_tile):nth-child(2) .v-block-text_tile) {
+  border-left: none;
 }
 
 </style>
