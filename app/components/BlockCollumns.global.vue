@@ -1,19 +1,27 @@
 <template>
     <section class="v-block-collumns"
     >
-      <div class="v-block-collumns__top v-remove-last-and-first-child-margin">
+      <div class="v-block-collumns__coll v-remove-last-and-first-child-margin"
+           v-if="slots.first"
+      >
         <slot name="first"/>
       </div>
 
-      <div class="v-block-collumns__bottom v-remove-last-and-first-child-margin">
+      <div class="v-block-collumns__coll v-remove-last-and-first-child-margin"
+           v-if="slots.second"
+      >
         <slot name="second"/>
       </div>
 
-      <div class="v-block-collumns__bottom v-remove-last-and-first-child-margin">
+      <div class="v-block-collumns__coll v-remove-last-and-first-child-margin"
+           v-if="slots.three"
+      >
         <slot name="three"/>
       </div>
 
-      <div class="v-block-collumns__bottom v-remove-last-and-first-child-margin">
+      <div class="v-block-collumns__coll v-remove-last-and-first-child-margin"
+           v-if="slots.four"
+      >
         <slot name="four"/>
       </div>
     </section>
@@ -35,13 +43,12 @@ const columnsCount = computed(() => {
   width: 100%;
   height: 100%;
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(v-bind(columnsCount), 1fr);
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.v-block-collumns__index {
-  position: absolute;
-  top:    var(--v-gutter);
-  right:  var(--v-gutter);
+.v-block-collumns__coll {
+  width: 100%;
 }
+
 </style>
