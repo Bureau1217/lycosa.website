@@ -58,6 +58,16 @@ seo:
   :::
 ::
 
+::two-columns
+#right
+:block-image{image="/images/pic22-6000.jpg"}
+::
+
+::two-columns
+#left
+:block-image{image="/images/fondglacier-6000.jpg"}
+::
+
 ::block-gallery
 ---
 images:
