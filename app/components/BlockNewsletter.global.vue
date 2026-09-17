@@ -55,7 +55,6 @@ function onSubmit() {
 
 .v-block-newsletter__content {
   text-align: right;
-  background: lightgray;
 }
 
 .v-block-newsletter__submit {
