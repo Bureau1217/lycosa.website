@@ -3,7 +3,9 @@
        @click="isOpen = !isOpen"
   >
     <div class="v-block-list__items__item__title v-remove-last-and-first-child-margin">
-      {{ title }}
+      <h3>
+        {{ title }}
+      </h3>
     </div>
 
     <div class="v-block-list__items__item__text v-remove-last-and-first-child-margin"

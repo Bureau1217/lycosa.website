@@ -68,7 +68,6 @@ function next() {
   position: relative;
   height: 100dvh;
   width: 100%;
-  padding: var(--v-gutter);
   display: flex;
   flex-direction: column;
 }

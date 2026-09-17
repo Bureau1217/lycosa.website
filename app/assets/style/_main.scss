@@ -19,11 +19,13 @@ html {
   padding: 0;
   font-family: 'ABC_Areal', sans-serif;
   font-size: var(--v-baseline--lineheight);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 var(--v-gutter--half);
   font-size: var(--v-font--size--base);
   line-height: var(--v-font--lineheight--base);
 }
@@ -46,13 +48,37 @@ h1, .v-font-h1 {
   font-weight: 400;
 }
 
-h2 {
+h2, .v-font-h2 {
   margin-top:       calc( var(--v-font--lineheight--base) * 1 );
   margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
   font-size:        calc( var(--v-font--size--base)       * 2 );
   line-height:      calc( var(--v-font--lineheight--base) * 2 );
   font-family: 'BAC_Arizona', serif;
   font-weight: 400;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+h3, .v-font-h3 {
+  margin-top:       calc( var(--v-font--lineheight--base) * 1 );
+  margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
+  font-size:        calc( var(--v-font--size--base)       * 1 );
+  line-height:      calc( var(--v-font--lineheight--base) * 1 );
+  font-family: 'BAC_Arizona', serif;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+h4, .v-font-h4 {
+
 
   a {
     color: inherit;
@@ -73,6 +99,15 @@ p {
   line-height:      calc( var(--v-font--lineheight--base) /3*2 );
   margin-top:      calc( var(--v-font--lineheight--base) /3*2 );
   margin-bottom:      calc( var(--v-font--lineheight--base) /3*2 );
+  font-variation-settings: 'wght' 400;
+  opacity: .9;
+}
+
+h5 {
+  @extend .v-font-small;
+  font-family: 'BAC_Arizona', serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 
@@ -81,7 +116,12 @@ p {
  */
 
 button {
+  font-family: inherit;
   cursor: pointer;
+}
+
+input {
+  font-family: inherit;
 }
 
 /**
@@ -133,6 +173,11 @@ button {
     line-height: var(--v-font--lineheight--base);
     letter-spacing: inherit;
     color: inherit;
+
+    &.v-form__input--font-small {
+      @extend .v-font-small;
+      margin: 0;
+    }
 
     &::placeholder {
       color: var(--v-color-black);

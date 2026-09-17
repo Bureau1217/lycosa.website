@@ -49,16 +49,22 @@ defineProps<{
 <style lang="scss" scoped >
 @use "~/assets/style/main";
 
+.v-block-image__title {
+  margin-bottom: 0;
+}
+
 .v-block-image {
   overflow: hidden;
-  width: 100%;
+  width: calc( 100% + var(--v-gutter--half) * 2 );
   height: 100dvh;
   color: var(--v-color-white);
   position: relative;
-  padding: var(--v-gutter--half);
+  padding: var(--v-gutter) var(--v-gutter--half);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-left: calc( var(--v-gutter--half) * -1 );
+  margin-right: calc( var(--v-gutter--half) * -1 );
 }
 
 .v-block-image__text-content {
@@ -72,6 +78,10 @@ defineProps<{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.v-block-image__subtitle {
+  font-size: .25em;
 }
 
 //:global(.v-block-image__text-content__text > p) {

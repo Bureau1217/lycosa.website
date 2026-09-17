@@ -45,4 +45,23 @@ defineProps<{
 :global(.v-block-text_tile__bottom > [class*=v-block-] + [class*=v-block-]) {
     margin-top: 1rem;
 }
+
+</style>
+<style lang="scss">
+.v-block-text_tile {
+  .v-block-text_tile__bottom {
+
+    h4 {
+      border-top: solid 1px;
+      padding-top: var(--v-gutter);
+    }
+
+    &:not(:has(h4)) {
+      .v-block-collumns {
+        border-top: solid 1px;
+        padding-top: var(--v-gutter);
+      }
+    }
+  }
+}
 </style>

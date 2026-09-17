@@ -26,5 +26,16 @@ defineSlots<{
 
 .v-two-columns__col {
   min-width: 0;
+
+  &:has(.v-block-text_tile) {
+    margin-left: calc( var(--v-gutter--half) * -1 );
+    margin-right: calc( var(--v-gutter--half) * -1 );
+
+    &:nth-child(2) {
+      background: #86BBEE;
+    }
+  }
+
 }
+
 </style>

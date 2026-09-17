@@ -1,14 +1,14 @@
 <template>
     <section class="v-block-newsletter"
     >
-      <div class="v-block-newsletter__content">
+      <div class="v-block-newsletter__content v-remove-last-and-first-child-margin">
         <h5 class="v-block-newsletter__title"
-        >{{ title || 'Vous voulez être au courant de la suite ?' }}</h5>
+        >{{ title || 'Nous rejoindre' }}</h5>
 
         <form class="v-block-newsletter__form v-form"
               @submit.prevent="onSubmit"
         >
-          <input class="v-block-newsletter__input"
+          <input class="v-block-newsletter__input v-form__input--font-small"
                  type="email"
                  v-model="email"
                  :placeholder="placeholder || 'Votre email'"
@@ -53,11 +53,10 @@ function onSubmit() {
   justify-content: flex-end;
 }
 
-.v-block-newsletter__content {
-  text-align: right;
-}
 
 .v-block-newsletter__submit {
+  color: var(--v-color-main);
+
   > img {
     display: block;
     height: var(--v-font--size--base);
