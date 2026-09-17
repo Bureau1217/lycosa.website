@@ -1,1 +1,0 @@
-import{F as e,m as t}from"./ygP5Hk6h.js";import{t as n}from"./BDNMzG2s.js";var r={};function i(n,r){return e(),t(`hr`)}var a=Object.assign(n(r,[[`render`,i]]),{__name:`ProseHr`});export{a as default};
