@@ -50,9 +50,11 @@ defineProps<{
   &.v-two-columns--scroll-effect {
     animation: v-two-columns--cover linear both;
     animation-timeline: view(block 0 auto);
-    animation-range: exit 0% exit 100%;
     height: 100vh;
     margin-top: 0;
+
+    // noinspection CssInvalidPropertyValue
+    animation-range: exit 0% exit 100%;
   }
 
   &.v-two-columns--remove-gap {
@@ -89,6 +91,11 @@ $max-blocks: 40;
     &:nth-child(2) {
       background: #86BBEE;
     }
+  }
+
+  > * {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
 }
