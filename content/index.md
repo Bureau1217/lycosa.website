@@ -111,7 +111,7 @@ scrollEffect: true
 scrollEffect: true
 ---
 #left
-  :::block-image{remove-gap image="/images/pic22-6000.jpg"}
+  :::block-image{remove-gap image="/images/pic15-6000.jpg"}
   :::
 ::
 
@@ -121,7 +121,7 @@ removeGap: true
 scrollEffect: true
 ---
 #right
-:block-image{image="/images/fondglacier-6000.jpg"}
+:block-image{image="/images/util2-6000.jpg"}
 ::
 
 ::two-columns
@@ -147,7 +147,7 @@ scrollEffect: true
 scrollEffect: true
 ---
 #right
-  :::block-image{remove-gap image="/images/pic22-6000.jpg"}
+  :::block-image{remove-gap image="/images/pic24-6000.jpg"}
   :::
 ::
 
@@ -156,7 +156,7 @@ scrollEffect: true
 removeGap: true
 ---
 #left
-:block-image{image="/images/fondglacier-6000.jpg"}
+:block-image{image="/images/fondroche-6000.jpg"}
 ::
 
 ::block-gallery
