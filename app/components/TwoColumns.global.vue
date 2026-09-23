@@ -1,5 +1,6 @@
 <template>
     <section class="v-two-columns"
+             :class="{ 'v-two-columns--scroll-effect': scrollEffect }"
     >
       <div class="v-two-columns__col v-remove-last-and-first-child-margin">
         <slot name="left" />
@@ -14,8 +15,12 @@
 defineSlots<{
   left?: () => any
   right?: () => any
+}>()
+
+defineProps<{
   scrollEffect?: () => boolean
 }>()
+
 </script>
 
 <style lang="scss" scoped >
@@ -37,9 +42,11 @@ defineSlots<{
   position: relative;
   //background: var(--v-two-columns--background, #fff);
 
-  animation: v-two-columns--cover linear both;
-  animation-timeline: view(block var(--v-two-columns--sticky-top, 0px) auto);
-  animation-range: exit 0% exit 100%;
+  &.v-two-columns--scroll-effect {
+    animation: v-two-columns--cover linear both;
+    animation-timeline: view(block var(--v-two-columns--sticky-top, 0px) auto);
+    animation-range: exit 0% exit 100%;
+  }
 }
 
 /**
