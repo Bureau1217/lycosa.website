@@ -5,7 +5,14 @@ seo:
   description: ""
 ---
 
-:block-image{image="/images/pic22-6000.jpg" subtitle="Watches" title="Lycosa"}
+::block-image
+---
+removeGap: true
+image: /images/pic22-6000.jpg
+subtitle: Watches
+title: Lycosa
+---
+::
 
 ::two-columns
 #left
@@ -45,6 +52,9 @@ seo:
 ::
 
 ::two-columns
+---
+scrollEffect: true
+---
 #left
   :::block-text-tile
   ---
@@ -59,11 +69,17 @@ seo:
 ::
 
 ::two-columns
+---
+scrollEffect: true
+---
 #right
 :block-image{image="/images/pic22-6000.jpg"}
 ::
 
 ::two-columns
+---
+removeGap: true
+---
 #left
 :block-image{image="/images/fondglacier-6000.jpg"}
 ::
@@ -207,7 +223,7 @@ title: Nos montres
   :::
 ::
 
-::block-image{image="/images/pic22-6000.jpg"}
+::block-image{removeGap image="/images/pic22-6000.jpg"}
 Lycosa Watches est en pleine création.
 
 Rejoignez notre communauté et suivez l’évolution de la marque : prototypes, choix de design, tests, premières séries.
