@@ -50,7 +50,7 @@ defineProps<{
   &.v-two-columns--scroll-effect {
     animation: v-two-columns--cover linear both;
     animation-timeline: view(block 0 auto);
-    height: 100vh;
+    height: 100dvh;
 
     // noinspection CssInvalidPropertyValue
     animation-range: exit 0% exit 100%;
