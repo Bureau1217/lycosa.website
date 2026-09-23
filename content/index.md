@@ -93,7 +93,7 @@ scrollEffect: true
 removeGap: true
 scrollEffect: true
 ---
-#left
+#right
   :::block-text-tile
   ---
   index: 2
@@ -110,7 +110,7 @@ scrollEffect: true
 ---
 scrollEffect: true
 ---
-#right
+#left
   :::block-image{remove-gap image="/images/pic22-6000.jpg"}
   :::
 ::
@@ -120,7 +120,7 @@ scrollEffect: true
 removeGap: true
 scrollEffect: true
 ---
-#left
+#right
 :block-image{image="/images/fondglacier-6000.jpg"}
 ::
 
