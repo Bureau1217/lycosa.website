@@ -2,6 +2,7 @@
     <section class="v-block-newsletter"
              :class="{
                'v-two-columns--remove-gap': removeGap,
+               'v-block-newsletter--justify-flex-end': justify_flexEnd,
              }"
     >
       <div class="v-block-newsletter__content v-remove-last-and-first-child-margin">
@@ -35,6 +36,7 @@ defineProps<{
   title?: string
   placeholder?: string
   removeGap?: boolean
+  justify_flexEnd?: boolean
 }>()
 
 const emit = defineEmits<{
@@ -53,8 +55,10 @@ function onSubmit() {
 .v-block-newsletter {
   width: 100%;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+
+  &.v-block-newsletter--justify-flex-end {
+    justify-content: flex-end;
+  }
 
   margin-top: var(--v-content-block-gap);
   &.v-two-columns--remove-gap {
