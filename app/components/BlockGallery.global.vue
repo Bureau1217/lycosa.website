@@ -134,14 +134,14 @@ function next() {
   .v-block-gallery__next__color {background: var(--v-color-secondary);}
 }
 .v-gallery--main-color--orange {
-  .v-block-gallery__prev__color {background: var(--v-color-secondary);}
-  // current var(--v-color-ternary)
-  .v-block-gallery__next__color {background: var(--v-color-main);}
-}
-.v-gallery--main-color--green {
   .v-block-gallery__prev__color {background: var(--v-color-main);}
   // current var(--v-color-secondary)
   .v-block-gallery__next__color {background: var(--v-color-ternary);}
+}
+.v-gallery--main-color--green {
+  .v-block-gallery__prev__color {background: var(--v-color-secondary);}
+  // current var(--v-color-ternary)
+  .v-block-gallery__next__color {background: var(--v-color-main);}
 }
 
 </style>
