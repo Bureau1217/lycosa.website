@@ -44,8 +44,9 @@ defineProps<{
 
   &.v-two-columns--scroll-effect {
     animation: v-two-columns--cover linear both;
-    animation-timeline: view(block var(--v-two-columns--sticky-top, 0px) auto);
+    animation-timeline: view(block 0 auto);
     animation-range: exit 0% exit 100%;
+    height: 100vh;
   }
 }
 
