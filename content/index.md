@@ -118,6 +118,7 @@ scrollEffect: true
 ::two-columns
 ---
 removeGap: true
+scrollEffect: true
 ---
 #left
 :block-image{image="/images/fondglacier-6000.jpg"}
