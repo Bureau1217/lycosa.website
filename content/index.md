@@ -63,7 +63,7 @@ scrollEffect: true
   index: 1
   ---
   #top
-  Matériaux techniques & responsables
+  ### Matériaux techniques & responsables
 
   #bottom
   Acier 316L, silicone haute résistance, polyester recyclé, carbone réparable : des matériaux modernes, robustes et pensés pour durer.
@@ -101,12 +101,15 @@ title: Nos montres
 #left
   :::block-text-tile
   #top
-  Partenaires prototypage
+  ### Partenaires prototypage
 
   #bottom
   #### Technique
 
     ::::block-collumns
+    ---
+    removeGap: true
+    ---
     #first
     Cadrans
 
@@ -118,6 +121,9 @@ title: Nos montres
     ::::
 
     ::::block-collumns
+    ---
+    removeGap: true
+    ---
     #first
     Inserts carbon
 
@@ -153,6 +159,9 @@ title: Nos montres
   #### Artistique
 
     ::::block-collumns
+    ---
+    removeGap: true
+    ---
     #first
     Photos prototypes
 
@@ -189,7 +198,7 @@ title: Nos montres
 #right
   :::block-text-tile
   #top
-  partenaires production
+  ### partenaires production
 
   #bottom
     ::::block-collumns
