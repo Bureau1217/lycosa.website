@@ -96,8 +96,10 @@ $max-blocks: 40;
     }
   }
 
-  > * {
+  > *:first-child {
     margin-top: 0;
+  }
+  > *:last-child {
     margin-bottom: 0;
   }
 
