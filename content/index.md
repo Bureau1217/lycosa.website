@@ -25,7 +25,7 @@ title: Lycosa
   :::
 
 #right
-  :::block-newsletter{justify-flex-end justifyFlexEnd remove-gap}
+  :::block-newsletter{justify-flex-end remove-gap}
   :::
 ::
 
