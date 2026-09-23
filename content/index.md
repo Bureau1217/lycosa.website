@@ -238,7 +238,7 @@ title: Nos montres
 ::block-image{remove-gap image="/images/pic22-6000.jpg"}
 Lycosa Watches est en pleine création.
 
-Rejoignez notre communauté et suivez l’évolution de la marque : prototypes, choix de design, tests, premières séries.
+Rejoignez notre communauté et suivez l’évolution de la marque : prototypes, choix de design, tests, premières séries.
 
 Votre montre n’est pas un accessoire. C’est une histoire. Écrivons‑la ensemble.
 ::
