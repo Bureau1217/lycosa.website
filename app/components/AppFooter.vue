@@ -4,14 +4,19 @@
   <footer class="v-app-footer">
     <div>
       <TwoColumns
+              :remove-gap="true"
       >
         <template #left >
           <h2>REJOINDRE L’AVENTURE ?</h2>
-          <BlockNewsletter/>
+          <BlockNewsletter
+                  :remove-gap="true"
+          />
         </template>
 
         <template #right >
-          <block-collumns>
+          <block-collumns
+                  :remove-gap="true"
+          >
             <template #first >
               <h5>Navigation</h5>
               <div class="v-font-small">
@@ -31,7 +36,7 @@
             <template #three >
               <h5>Social</h5>
               <div class="v-font-small">
-                <br/><a target="_blank" href="https://www.instagram.com/lycosawatches/?hl=fr">Instagram</a>
+                <a target="_blank" href="https://www.instagram.com/lycosawatches/?hl=fr">Instagram</a>
                 <br/><a target="_blank" href="https://www.facebook.com/profile.php?id=61591873541899">Facebook</a>
                 <br/><a target="_blank" href="https://www.linkedin.com/company/lycosa-watches/home/">Linkedin</a>
               </div>
@@ -62,5 +67,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+:global(.v-app-footer a) {
+  text-decoration: none;
 }
 </style>
