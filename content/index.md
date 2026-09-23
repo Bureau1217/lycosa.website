@@ -16,7 +16,7 @@ title: Lycosa
 
 ::two-columns
 #left
-  :::block-empty
+  :::block-empty{remove-gap}
   Lycosa crée des montres suisses contemporaines où l’élégance rencontre l’utilitaire.
 
   Pensées pour accompagner un mode de vie actif, nos pièces combinent un design travaillé, une architecture robuste et des matériaux techniques : acier inox 316L, silicone technique haute résistance, bracelets en polyester recyclé et inserts en carbone thermo-réparables.
@@ -25,7 +25,8 @@ title: Lycosa
   :::
 
 #right
-:block-newsletter
+  :::block-newsletter{removeGap}
+  :::
 ::
 
 ::two-columns
@@ -42,11 +43,12 @@ title: Lycosa
     - title: Durabilité Suisse
       text: Assemblage local, contrôle qualité rigoureux, réparabilité garantie et
         partenaires reconnus pour leurs pratiques responsables/sociales.
+  removeGap: true
   ---
   :::
 
 #left
-  :::block-empty
+  :::block-empty{remove-gap}
   ## Vision
   :::
 ::
@@ -73,7 +75,8 @@ scrollEffect: true
 scrollEffect: true
 ---
 #right
-:block-image{image="/images/pic22-6000.jpg"}
+  :::block-image{removeGap image="/images/pic22-6000.jpg"}
+  :::
 ::
 
 ::two-columns
@@ -223,7 +226,7 @@ title: Nos montres
   :::
 ::
 
-::block-image{removeGap image="/images/pic22-6000.jpg"}
+::block-image{remove-gap image="/images/pic22-6000.jpg"}
 Lycosa Watches est en pleine création.
 
 Rejoignez notre communauté et suivez l’évolution de la marque : prototypes, choix de design, tests, premières séries.
