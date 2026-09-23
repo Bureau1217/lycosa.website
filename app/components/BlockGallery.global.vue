@@ -36,6 +36,7 @@ import { ref, computed } from 'vue'
 const props = defineProps<{
   title?: string
   images?: { image?: string }[]
+  removeGap?: boolean
 }>()
 
 const index = ref(0)
@@ -70,6 +71,10 @@ function next() {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: var(--v-content-block-gap);
+  &.v-two-columns--remove-gap {
+    margin-top: 0;
+  }
 }
 
 .v-block-gallery__viewport {

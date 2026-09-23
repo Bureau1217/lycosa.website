@@ -5,13 +5,23 @@
     </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+
+defineProps<{
+  removeGap?: boolean
+}>()
+
+</script>
 
 <style lang="scss" scoped >
 .v-block-empty {
   width: 100%;
   height: 100%;
   position: relative;
+  margin-top: var(--v-content-block-gap);
+  &.v-two-columns--remove-gap {
+    margin-top: 0;
+  }
 }
 </style>
 

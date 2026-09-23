@@ -1,6 +1,9 @@
 <template>
     <section class="v-two-columns"
-             :class="{ 'v-two-columns--scroll-effect': scrollEffect }"
+             :class="{
+                'v-two-columns--scroll-effect': scrollEffect,
+                'v-two-columns--remove-gap': removeGap,
+             }"
     >
       <div class="v-two-columns__col v-remove-last-and-first-child-margin">
         <slot name="left" />
@@ -19,6 +22,7 @@ defineSlots<{
 
 defineProps<{
   scrollEffect?: boolean
+  removeGap?: boolean
 }>()
 
 </script>
@@ -38,6 +42,7 @@ defineProps<{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--v-gutter, 2rem);
+  margin-top: var(--v-content-block-gap);
 
   position: relative;
   //background: var(--v-two-columns--background, #fff);
@@ -47,6 +52,11 @@ defineProps<{
     animation-timeline: view(block 0 auto);
     animation-range: exit 0% exit 100%;
     height: 100vh;
+    margin-top: 0;
+  }
+
+  &.v-two-columns--remove-gap {
+    margin-top: 0;
   }
 }
 

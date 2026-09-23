@@ -29,6 +29,7 @@ defineProps<{
     title?: string
     text?: string
   }[]
+  removeGap?: boolean
 }>()
 </script>
 
@@ -41,6 +42,10 @@ defineProps<{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: var(--v-content-block-gap);
+  &.v-two-columns--remove-gap {
+    margin-top: 0;
+  }
 }
 
 .v-block-list__items__line {

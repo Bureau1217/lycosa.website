@@ -39,6 +39,7 @@ defineProps<{
   title?: string
   subtitle?: string
   image?: string
+  removeGap?: boolean
 }>()
 </script>
 
@@ -65,6 +66,10 @@ defineProps<{
   justify-content: flex-end;
   margin-left: calc( var(--v-gutter--half) * -1 );
   margin-right: calc( var(--v-gutter--half) * -1 );
+  margin-top: var(--v-content-block-gap);
+  &.v-two-columns--remove-gap {
+    margin-top: 0;
+  }
 }
 
 .v-block-image__text-content {

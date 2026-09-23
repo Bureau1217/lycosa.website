@@ -30,6 +30,10 @@
 <script setup lang="ts">
 const slots = useSlots();
 
+defineProps<{
+  removeGap?: boolean
+}>()
+
 const columnsCount = computed(() => {
   const slotNames = ['first', 'second', 'three', 'four']
   return slotNames.filter(name => !!slots[name]).length || 1
@@ -44,6 +48,10 @@ const columnsCount = computed(() => {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
+  margin-top: var(--v-content-block-gap);
+  &.v-two-columns--remove-gap {
+    margin-top: 0;
+  }
 }
 
 .v-block-collumns__coll {
