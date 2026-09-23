@@ -25,7 +25,7 @@ title: Lycosa
   :::
 
 #right
-  :::block-newsletter{removeGap}
+  :::block-newsletter{remove-gap}
   :::
 ::
 
@@ -75,7 +75,7 @@ scrollEffect: true
 scrollEffect: true
 ---
 #right
-  :::block-image{removeGap image="/images/pic22-6000.jpg"}
+  :::block-image{remove-gap image="/images/pic22-6000.jpg"}
   :::
 ::
 
