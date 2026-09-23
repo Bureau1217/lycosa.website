@@ -46,6 +46,8 @@ const columnsCount = computed(() => {
 
 
 <style lang="scss" scoped >
+@use '~/assets/style/main';
+
 .v-block-collumns {
   width: 100%;
   position: relative;
@@ -55,6 +57,9 @@ const columnsCount = computed(() => {
   &.v-two-columns--remove-gap {
     margin-top: 0;
   }
+}
+:global(.v-block-collumns .v-block-collumns__coll p) {
+  @extend .v-font-small;
 }
 
 .v-block-collumns__coll {
