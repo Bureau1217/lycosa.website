@@ -41,14 +41,17 @@ defineProps<{
 
 
 <style lang="scss" scoped >
-.v-block-list__items {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.v-block-list {
   margin-top: var(--v-content-block-gap);
   &.v-two-columns--remove-gap {
     margin-top: 0;
   }
+}
+
+.v-block-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .v-block-list__items__line {

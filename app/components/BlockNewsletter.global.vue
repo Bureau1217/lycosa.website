@@ -55,6 +55,21 @@ function onSubmit() {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+
+  margin-top: var(--v-content-block-gap);
+  &.v-two-columns--remove-gap {
+    margin-top: 0;
+  }
+
+}
+:global(.v-two-columns__col .v-block-newsletter) {
+  position: sticky;
+  top: calc(100dvh / 3);
+}
+
+.v-block-newsletter__content {
+  padding-bottom: .5rem;
+  border-bottom: solid 1px var(--v-color-black);
 }
 
 
