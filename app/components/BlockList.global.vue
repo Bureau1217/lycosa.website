@@ -1,5 +1,8 @@
 <template>
     <section class="v-block-list"
+             :class="{
+              'v-two-columns--remove-gap': removeGap,
+              }"
     >
       <div class="v-block-list__items"
       >

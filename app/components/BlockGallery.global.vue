@@ -1,6 +1,11 @@
 <template>
     <section class="v-block-gallery"
-             :class="mainColor"
+             :class="[
+                 {
+                'v-two-columns--remove-gap': removeGap,
+                },
+                mainColor,
+              ]"
     >
       <h2 v-if="title" class="v-block-gallery__title"
       >{{ title }}</h2>

@@ -1,5 +1,8 @@
 <template>
     <section class="v-block-empty v-remove-last-and-first-child-margin"
+             :class="{
+              'v-two-columns--remove-gap': removeGap,
+              }"
     >
       <slot/>
     </section>

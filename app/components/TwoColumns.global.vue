@@ -51,10 +51,13 @@ defineProps<{
     animation: v-two-columns--cover linear both;
     animation-timeline: view(block 0 auto);
     height: 100vh;
-    margin-top: 0;
 
     // noinspection CssInvalidPropertyValue
     animation-range: exit 0% exit 100%;
+
+    & + & {
+      margin-top: 0;
+    }
   }
 
   &.v-two-columns--remove-gap {

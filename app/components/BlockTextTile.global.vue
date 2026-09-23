@@ -1,5 +1,8 @@
 <template>
     <section class="v-block-text_tile"
+             :class="{
+              'v-two-columns--remove-gap': removeGap,
+              }"
     >
       <div class="v-block-text_tile__top v-remove-last-and-first-child-margin">
         <slot name="top"/>
@@ -19,6 +22,7 @@
 
 defineProps<{
   index: number
+  removeGap?: boolean
 }>()
 
 </script>

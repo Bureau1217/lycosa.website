@@ -1,5 +1,8 @@
 <template>
     <section class="v-block-image"
+             :class="{
+              'v-two-columns--remove-gap': removeGap,
+              }"
     >
       <img class="v-block-image__image"
            v-if="image"

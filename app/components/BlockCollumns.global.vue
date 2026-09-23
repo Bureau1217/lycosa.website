@@ -1,5 +1,8 @@
 <template>
     <section class="v-block-collumns"
+             :class="{
+              'v-two-columns--remove-gap': removeGap,
+              }"
     >
       <div class="v-block-collumns__coll v-remove-last-and-first-child-margin"
            v-if="slots.first"

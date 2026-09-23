@@ -1,5 +1,8 @@
 <template>
     <section class="v-block-newsletter"
+             :class="{
+               'v-two-columns--remove-gap': removeGap,
+             }"
     >
       <div class="v-block-newsletter__content v-remove-last-and-first-child-margin">
         <h5 class="v-block-newsletter__title"
@@ -31,6 +34,7 @@ import { ref } from 'vue'
 defineProps<{
   title?: string
   placeholder?: string
+  removeGap?: boolean
 }>()
 
 const emit = defineEmits<{
