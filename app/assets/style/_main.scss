@@ -63,6 +63,7 @@ h2, .v-font-h2 {
   line-height:      calc( var(--v-font--lineheight--base) * 2 );
   font-family: 'BAC_Arizona', serif;
   font-weight: 400;
+  text-transform: uppercase;
 
   a {
     text-decoration: none;
@@ -84,6 +85,8 @@ h3, .v-font-h3 {
 }
 
 h4, .v-font-h4 {
+  font-weight: 500;
+  text-transform: uppercase;
 
 
   a {
