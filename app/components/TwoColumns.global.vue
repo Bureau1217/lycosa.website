@@ -63,6 +63,10 @@ defineProps<{
   &.v-two-columns--remove-gap {
     margin-top: 0;
   }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 /**

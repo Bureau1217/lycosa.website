@@ -57,6 +57,14 @@ const columnsCount = computed(() => {
   &.v-two-columns--remove-gap {
     margin-top: 0;
   }
+
+  @media (max-width: 700px) {
+    flex-wrap: wrap;
+
+    & + & {
+      margin-top: 2rem !important;
+    }
+  }
 }
 :global(.v-block-collumns .v-block-collumns__coll p) {
   @extend .v-font-small;
@@ -64,6 +72,12 @@ const columnsCount = computed(() => {
 
 .v-block-collumns__coll {
   width: 100%;
+
+  @media (max-width: 700px) {
+    & + & {
+      margin-top: 1rem;
+    }
+  }
 }
 
 </style>
