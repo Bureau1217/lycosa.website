@@ -6,6 +6,9 @@ import AppFooter from "~/components/AppFooter.vue";
     <main class="v-app__main">
       <NuxtPage />
     </main>
+    <div class="v-app__footer">
+      <AppFooter/>
+    </div>
   </div>
 </template>
 
@@ -14,6 +17,7 @@ import AppFooter from "~/components/AppFooter.vue";
   z-index: 0;
   position: relative;
   background: white;
+  margin-bottom: 100dvh;
   padding: 0 var(--v-gutter--half);
 }
 
