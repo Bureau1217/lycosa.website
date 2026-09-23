@@ -57,9 +57,10 @@ h1, .v-font-h1 {
 }
 
 h2, .v-font-h2 {
+  max-width: 12em;
   margin-top:       calc( var(--v-font--lineheight--base) * 1 );
   margin-bottom:    calc( var(--v-font--lineheight--base) * 1 );
-  font-size:        calc( var(--v-font--size--base)       * 2 );
+  font-size:        calc( var(--v-font--size--base)       * 2.5 );
   line-height:      calc( var(--v-font--lineheight--base) * 2 );
   font-family: 'BAC_Arizona', serif;
   font-weight: 400;
