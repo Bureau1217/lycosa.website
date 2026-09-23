@@ -53,9 +53,6 @@ title: Lycosa
   :::
 ::
 
-
-[//]: # (triple section start)
-
 ::two-columns
 ---
 scrollEffect: true
@@ -85,34 +82,28 @@ scrollEffect: true
 ::two-columns
 ---
 removeGap: true
+scrollEffect: true
 ---
 #left
 :block-image{image="/images/fondglacier-6000.jpg"}
 ::
 
-[//]: # (triple section end)
-
-
-
-
-[//]: # (triple section start)
-
 ::two-columns
 ---
-scrollEffect: true
 removeGap: true
+scrollEffect: true
 ---
 #left
-    :::block-text-tile
-      ---
-    index: 2
-    ---
-    #top
-    ### Micro‑marque indépendante suisse
-    
-    #bottom
-    Liberté créative totale, production maîtrisée et collaborations exclusivement locales avec des partenaires suisses et des artisans indépendants.
-    :::
+  :::block-text-tile
+  ---
+  index: 2
+  ---
+  #top
+  ### Micro‑marque indépendante suisse
+
+  #bottom
+  Liberté créative totale, production maîtrisée et collaborations exclusivement locales avec des partenaires suisses et des artisans indépendants.
+  :::
 ::
 
 ::two-columns
@@ -120,8 +111,8 @@ removeGap: true
 scrollEffect: true
 ---
 #right
-:::block-image{remove-gap image="/images/pic22-6000.jpg"}
-:::
+  :::block-image{remove-gap image="/images/pic22-6000.jpg"}
+  :::
 ::
 
 ::two-columns
@@ -132,11 +123,40 @@ removeGap: true
 :block-image{image="/images/fondglacier-6000.jpg"}
 ::
 
-[//]: # (triple section end)
+::two-columns
+---
+removeGap: true
+scrollEffect: true
+---
+#left
+  :::block-text-tile
+  ---
+  index: 3
+  ---
+  #top
+  ### Micro‑marque indépendante suisse
 
+  #bottom
+  Liberté créative totale, production maîtrisée et collaborations exclusivement locales avec des partenaires suisses et des artisans indépendants.
+  :::
+::
 
+::two-columns
+---
+scrollEffect: true
+---
+#right
+  :::block-image{remove-gap image="/images/pic22-6000.jpg"}
+  :::
+::
 
-
+::two-columns
+---
+removeGap: true
+---
+#left
+:block-image{image="/images/fondglacier-6000.jpg"}
+::
 
 ::block-gallery
 ---
