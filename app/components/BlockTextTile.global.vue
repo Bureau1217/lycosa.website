@@ -38,6 +38,10 @@ defineProps<{
   border: solid 1px var(--v-color-black);
   gap: 10rem;
   padding: var(--v-gutter);
+
+  @media (max-width: 700px) {
+    gap: 1rem;
+  }
 }
 
 .v-block-text_tile__index {

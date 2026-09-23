@@ -41,7 +41,7 @@ defineProps<{
 .v-two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--v-gutter, 2rem);
+  column-gap: var(--v-gutter, 2rem);
   margin-top: var(--v-content-block-gap);
 
   position: relative;
@@ -57,6 +57,10 @@ defineProps<{
 
     & + & {
       margin-top: 0;
+    }
+
+    @media (max-width: 700px) {
+      animation: none;
     }
   }
 
