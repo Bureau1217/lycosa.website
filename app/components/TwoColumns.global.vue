@@ -18,7 +18,7 @@ defineSlots<{
 }>()
 
 defineProps<{
-  scrollEffect?: () => boolean
+  scrollEffect?: boolean
 }>()
 
 </script>
