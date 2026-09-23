@@ -2,7 +2,9 @@
   <div class="v-block-list__items__item"
        @click="isOpen = !isOpen"
   >
-    <div class="v-block-list__items__item__title v-remove-last-and-first-child-margin">
+    <div class="v-block-list__items__item__title v-remove-last-and-first-child-margin"
+         role="button"
+    >
       <h3>
         {{ title }}
       </h3>
@@ -50,12 +52,16 @@ const isOpen = ref(false)
 
 
 <style lang="scss" scoped >
+@use '~/assets/style/css-var';
+
 .v-block-list__items__item__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: nowrap;
+    user-select: none;
+    cursor: pointer;
 
     h3 {
       margin-bottom: 0;
@@ -66,4 +72,9 @@ const isOpen = ref(false)
   flex-shrink: 0;
   color: var(--v-color-main);
 }
+
+.v-block-list__items__item__text {
+  margin-top:    calc( var(--v-font--lineheight--base) * 1 );
+}
+
 </style>
