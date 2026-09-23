@@ -7,7 +7,7 @@
               :remove-gap="true"
       >
         <template #left >
-          <h2>REJOINDRE L’AVENTURE ?</h2>
+          <h2>REJOINDRE L’AVENTURE&nbsp;?</h2>
           <BlockNewsletter
                   :remove-gap="true"
           />
