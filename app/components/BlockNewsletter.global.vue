@@ -2,7 +2,7 @@
     <section class="v-block-newsletter"
              :class="{
                'v-two-columns--remove-gap': removeGap,
-               'v-block-newsletter--justify-flex-end': justify_flexEnd,
+               'v-block-newsletter--justify-flex-end': justifyFlexEnd,
              }"
     >
       <div class="v-block-newsletter__content v-remove-last-and-first-child-margin">
@@ -36,7 +36,7 @@ defineProps<{
   title?: string
   placeholder?: string
   removeGap?: boolean
-  justify_flexEnd?: boolean
+  justifyFlexEnd?: boolean
 }>()
 
 const emit = defineEmits<{
