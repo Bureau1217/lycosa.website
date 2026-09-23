@@ -26,7 +26,7 @@
           >&larr; Previous<div class="v-block-gallery__prev__color" /></div>
 
           <div class="v-block-gallery__next"
-                  type="button"
+                  role="button"
                   @click="next"
           ><div class="v-block-gallery__next__color" />Next &rarr;</div>
         </div>
