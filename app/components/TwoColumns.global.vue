@@ -95,6 +95,13 @@ $max-blocks: 40;
 .v-two-columns__col {
   min-width: 0;
 
+  @media (max-width: 700px) {
+    &:empty {
+      display: none;
+    }
+  }
+
+
   &:has(.v-block-text_tile) {
     margin-left: calc( var(--v-gutter--half) * -1 );
     margin-right: calc( var(--v-gutter--half) * -1 );
