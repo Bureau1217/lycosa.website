@@ -169,141 +169,41 @@ title: Nos montres
 ---
 ::
 
-::two-columns
-#left
-  :::block-text-tile
-  #top
-  ### Partenaires prototypage
+::block-text-tile
+#top
+### partenaires production
 
-  #bottom
-  #### Technique
+#bottom
+  :::block-collumns
+  #first
+  Hourlabel SARL - OBWALD
 
-    ::::block-collumns
-    ---
-    removeGap: true
-    ---
-    #first
-    Cadrans
-
-    #second
-    Cadratec
-
-    #three
-    2364 St-Brais JURA
-    ::::
-
-    ::::block-collumns
-    ---
-    removeGap: true
-    ---
-    #first
-    Inserts carbon
-
-    #second
-    Comppair
-
-    #three
-    1020 Renens VAUD
-    ::::
-
-    ::::block-collumns
-    #first
-    Coques de protection silicone
-
-    #second
-    Solvateq
-
-    #three
-    1052 Le Mont-sur-Lausanne VAUD
-    ::::
-
-    ::::block-collumns
-    #first
-    Bracelets
-
-    #second
-    Yasmina Berkane
-
-    #three
-    1202 GENÈVE
-    ::::
-
-  #### Artistique
-
-    ::::block-collumns
-    ---
-    removeGap: true
-    ---
-    #first
-    Photos prototypes
-
-    #second
-    Sven Rass
-
-    #three
-    1202 GENÈVE
-    ::::
-
-    ::::block-collumns
-    #first
-    Vidéo prototypes
-
-    #second
-    Aristo Xanthopoulos
-
-    #three
-    1202 GENÈVE
-    ::::
-
-    ::::block-collumns
-    #first
-    Graphisme et médiamatique
-
-    #second
-    Bureau1217
-
-    #three
-    1227 Carouge GENÈVE
-    ::::
+  #second
+  Cadrans, aiguilles, mouvement 5030 D Ronda, boitier montre (Tête de montre), boucles de bracelets, mousquetons, fabrication et étude étuis,  assemblage, contrôle qualité et final
   :::
 
-#right
-  :::block-text-tile
-  #top
-  ### partenaires production
+  :::block-collumns
+  #first
+  Solvateq - VAUD
 
-  #bottom
-    ::::block-collumns
-    #first
-    Hourlabel SARL - OBWALD
+  #second
+  Coques de protections et étude faisabilité
+  :::
 
-    #second
-    Cadrans, aiguilles, mouvement 5030 D Ronda, boitier montre (Tête de montre), boucles de bracelets, mousquetons, fabrication et étude étuis,  assemblage, contrôle qualité et final
-    ::::
+  :::block-collumns
+  #first
+  Comppair - VAUD
 
-    ::::block-collumns
-    #first
-    Solvateq - VAUD
+  #second
+  Inserts carbon et étude de faisabilité
+  :::
 
-    #second
-    Coques de protections et étude faisabilité
-    ::::
+  :::block-collumns
+  #first
+  Yasmina Berkane  / Version N.2
 
-    ::::block-collumns
-    #first
-    Comppair - VAUD
-
-    #second
-    Inserts carbon et étude de faisabilité
-    ::::
-
-    ::::block-collumns
-    #first
-    Yasmina Berkane  / Version N.2
-
-    #second
-    Commande matière première  et couture des bracelets
-    ::::
+  #second
+  Commande matière première  et couture des bracelets
   :::
 ::
 
