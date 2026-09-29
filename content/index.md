@@ -183,6 +183,18 @@ title: Nos montres
       link: https://www.mih.ch/fr/horizon-gaia/
     - title: Prix Gaïa annonce des lauréats 2026 et de la bourse Horizon Gaïa
       link: https://swiss-watch-passport.ch/prix-gaia-annonce-des-laureats-2026-et-de-la-bourse-horizon-gaia-10h10-l-horloger-suisse/
+    - title: Découvrez les lauréats du Prix Gaïa 2026
+      link: https://www.europastar.ch/time-business/2153-decouvrez-les-laureats-du-prix-gaia-2026.html
+    - title: Gaïa Prize 2026 | Winners Announced and Horizon Gaïa Grant Awarded
+      link: https://www.watchonista.com/editorial/watch-industry/gaia-prize-2026-winners-announced-and-horizon-gaia-grant-awarded/
+    - title: Prix Gaïa 2026 | trois lauréats consacrés à La Chaux-de-Fonds
+      link: https://wcbs.fr/prix-gaia-2026-laureats/
+    - title: Prix Gaïa | les trois lauréats 2026 dévoilés
+      link: https://www.rtn.ch/rtn/Actualite/Region/20260820-Prix-Gaia-les-trois-laureats-2026-devoiles.html#
+    - title: Prix Gaïa 2026 | les trois lauréats dévoilés à La Chaux-de-Fonds
+      link: https://latele.ch/articles/prix-gaia-les-trois-laureats-2026-devoiles
+    - title: Prix Gaïa | les trois lauréats 2026 dévoilés
+      link: https://www.swissinfo.ch/fre/prix-ga%C3%AFa%3a-les-trois-laur%C3%A9ats-2026-d%C3%A9voil%C3%A9s/91925050
   ---
   :::
 ::
