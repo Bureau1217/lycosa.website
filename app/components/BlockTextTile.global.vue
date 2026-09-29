@@ -40,7 +40,8 @@ defineProps<{
   padding: var(--v-gutter);
   box-sizing: border-box;
   background: var(--v-color-white);
-  min-height: 100dvh;
+  margin-top: var(--v-content-block-gap);
+
 
   @media (max-width: 800px) {
     gap: 1rem;
@@ -51,6 +52,17 @@ defineProps<{
   margin-left: calc( var(--v-gutter--half) * -1);
   margin-right: calc( var(--v-gutter--half) * -1);
   width: calc(100% + (var(--v-gutter)) );
+}
+:global(.v-two-columns__col > .v-block-text_tile) {
+  min-height: 100dvh;
+
+  @media (max-width: 800px) {
+    justify-content: flex-start;
+  }
+}
+
+.v-block-text_tile__top {
+  padding-right: 2rem;
 }
 
 .v-block-text_tile__index {
