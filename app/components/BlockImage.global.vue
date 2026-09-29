@@ -5,8 +5,8 @@
               }"
     >
       <img class="v-block-image__image"
-           v-if="image"
-           :src="image"
+           v-if="currentImage"
+           :src="currentImage"
            :alt="title" />
 
       <div class="v-block-image__text-content v-remove-last-and-first-child-margin">
@@ -38,12 +38,27 @@
 
 
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   title?: string
   subtitle?: string
   image?: string
   removeGap?: boolean
 }>()
+
+const COLORS = ['__orange__', '__green__', '__blue__']
+const COLOR_PATTERN = /__(orange|green|blue)__/
+
+const currentImage = ref<null| string>(null)
+
+function randomizeColor(src?: string): string | null {
+  if (!src || !COLOR_PATTERN.test(src)) return src || null
+  const color = COLORS[Math.floor(Math.random() * COLORS.length)]!
+  return src.replace(COLOR_PATTERN, color) || null
+}
+
+onMounted(() => {
+  currentImage.value = randomizeColor(props.image)
+})
 </script>
 
 
