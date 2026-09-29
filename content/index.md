@@ -169,6 +169,24 @@ title: Nos montres
 ---
 ::
 
+::two-columns
+#left
+## Presse
+
+#right
+  :::block-links
+  ---
+  items:
+    - title: Watch and Match 2026
+      link: https://www.watch-and-match.com/geneve-balexert/
+    - title: Lauréats horizon Gaia MIH
+      link: https://www.mih.ch/fr/horizon-gaia/
+    - title: Prix Gaïa annonce des lauréats 2026 et de la bourse Horizon Gaïa
+      link: https://swiss-watch-passport.ch/prix-gaia-annonce-des-laureats-2026-et-de-la-bourse-horizon-gaia-10h10-l-horloger-suisse/
+  ---
+  :::
+::
+
 ::block-text-tile
 #top
 ### partenaires production
