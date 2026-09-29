@@ -28,11 +28,6 @@ defineProps<{
 </script>
 
 <style lang="scss" scoped >
-/**
- * La section n’occupe pas plus de place qu’en flux normal : au moment où elle
- * sortirait par le haut du viewport, elle se translate de 100% de sa hauteur,
- * ce qui la fige visuellement et lui fait recouvrir l’élément qui la suit.
- */
 @keyframes v-two-columns--cover {
   from { transform: translateY(0); }
   to   { transform: translateY(100%); }
@@ -83,12 +78,6 @@ $max-blocks: 40;
 @for $i from 1 through $max-blocks {
   .v-two-columns:nth-child(#{$i}) {
     z-index: $max-blocks + 1 - $i;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .v-two-columns {
-    animation: none;
   }
 }
 
