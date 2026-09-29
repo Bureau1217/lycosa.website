@@ -45,19 +45,18 @@ const props = defineProps<{
   removeGap?: boolean
 }>()
 
-const COLORS = ['__orange__', '__green__', '__blue__']
 const COLOR_PATTERN = /__(orange|green|blue)__/
-
 const currentImage = ref<null| string>(null)
+const globalColorTheme = useGlobalColorTheme().globalColorTheme
 
-function randomizeColor(src?: string): string | null {
+function setColorImagePathVariable(src?: string): string | null {
   if (!src || !COLOR_PATTERN.test(src)) return src || null
-  const color = COLORS[Math.floor(Math.random() * COLORS.length)]!
-  return src.replace(COLOR_PATTERN, color) || null
+  const stringColorVar = `__${globalColorTheme.value}__`
+  return src.replace(COLOR_PATTERN, stringColorVar) || null
 }
 
 onMounted(() => {
-  currentImage.value = randomizeColor(props.image)
+  currentImage.value = setColorImagePathVariable(props.image)
 })
 </script>
 

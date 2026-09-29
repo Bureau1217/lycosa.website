@@ -2,9 +2,11 @@
   --v-color-white: #ffffff;
   --v-color-black: #000000;
 
-  --v-color-main: #227ED9;
-  --v-color-secondary: #FF9900;
-  --v-color-ternary: #18C950;
+  --v-color-blue: #227ED9;
+  --v-color-orange: #FF9900;
+  --v-color-green: #18C950;
+
+  --v-color-main: var(--v-color-blue);
 
   --v-content-block-gap: 10rem;
 

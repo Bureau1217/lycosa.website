@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import AppFooter from "~/components/AppFooter.vue";
+
+const { randomizeGlobalColorTheme, globalColorTheme } = useGlobalColorTheme()
+
+onMounted(randomizeGlobalColorTheme)
 </script>
 <template>
-  <div class="v-app">
+  <div class="v-app" :class="globalColorTheme">
     <main class="v-app__main">
       <NuxtPage />
     </main>
@@ -19,6 +23,18 @@ import AppFooter from "~/components/AppFooter.vue";
   background: white;
   margin-bottom: 100dvh;
   padding: 0 var(--v-gutter--half);
+}
+
+:global(.v-app.green) {
+  --v-color-main: var(--v-color-green)
+}
+
+:global(.v-app.orange) {
+  --v-color-main: var(--v-color-orange)
+}
+
+:global(.v-app.blue) {
+  --v-color-main: var(--v-color-blue)
 }
 
 .v-app__footer {
