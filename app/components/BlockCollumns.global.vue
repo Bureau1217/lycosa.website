@@ -58,7 +58,7 @@ const columnsCount = computed(() => {
     margin-top: 0;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     flex-wrap: wrap;
 
     & + & {
@@ -73,7 +73,7 @@ const columnsCount = computed(() => {
 .v-block-collumns__coll {
   width: 100%;
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     & + & {
       margin-top: 1rem;
     }

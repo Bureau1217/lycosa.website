@@ -42,7 +42,7 @@ defineProps<{
   background: var(--v-color-white);
   min-height: 100dvh;
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     gap: 1rem;
   }
 

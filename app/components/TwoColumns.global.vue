@@ -36,7 +36,7 @@ defineProps<{
 .v-two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: var(--v-gutter, 2rem);
+  column-gap: var(--v-gutter);
   margin-top: var(--v-content-block-gap);
 
   position: relative;
@@ -54,8 +54,8 @@ defineProps<{
       margin-top: 0;
     }
 
-    @media (max-width: 700px) {
-      animation: none;
+    @media (max-width: 800px) {
+      height: auto;
     }
   }
 
@@ -65,6 +65,7 @@ defineProps<{
 
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
+    row-gap: var(--v-gutter);
   }
 }
 
@@ -78,13 +79,17 @@ $max-blocks: 40;
 @for $i from 1 through $max-blocks {
   .v-two-columns:nth-child(#{$i}) {
     z-index: $max-blocks + 1 - $i;
+
+    @media (max-width: 800px) {
+      z-index: $max-blocks + 1 + $i;
+    }
   }
 }
 
 .v-two-columns__col {
   min-width: 0;
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     &:empty {
       display: none;
     }
