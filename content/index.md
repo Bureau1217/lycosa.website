@@ -169,6 +169,15 @@ title: Nos montres
 ---
 ::
 
+::block-images-list
+---
+images:
+  - image: /images/back-blue-6000.jpg
+  - image: /images/pic22-6000.jpg
+  - image: /images/blue-6000.jpg
+---
+::
+
 ::two-columns
 #left
 ## Presse
