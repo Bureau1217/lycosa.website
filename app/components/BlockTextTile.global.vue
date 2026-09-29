@@ -39,6 +39,8 @@ defineProps<{
   gap: 10rem;
   padding: var(--v-gutter);
   box-sizing: border-box;
+  background: var(--v-color-white);
+  min-height: 100dvh;
 
   @media (max-width: 700px) {
     gap: 1rem;
