@@ -58,6 +58,14 @@ function onSubmit() {
 
   &.v-block-newsletter--justify-flex-end {
     justify-content: flex-end;
+
+    @media screen and (max-width: 800px) {
+      justify-content: flex-start;
+
+      .v-two-columns__col & {
+        margin-top: var(--v-content-block-gap);
+      }
+    }
   }
 
   margin-top: var(--v-content-block-gap);
