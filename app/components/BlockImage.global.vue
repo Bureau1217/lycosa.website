@@ -58,6 +58,11 @@ function setColorImagePathVariable(src?: string): string | null {
 onMounted(() => {
   currentImage.value = setColorImagePathVariable(props.image)
 })
+
+// Follow theme changes (e.g. browsing the watches in the gallery)
+watch(globalColorTheme, () => {
+  currentImage.value = setColorImagePathVariable(props.image)
+})
 </script>
 
 
@@ -69,6 +74,12 @@ onMounted(() => {
 
 .v-block-image__title {
   margin-bottom: 0;
+
+  // Small screens: scale the title with the viewport so "LYCOSA WATCHES" stays on screen
+  @media (max-width: 800px) {
+    font-size: min(calc(var(--v-font--size--base) * 5), 15vw);
+    line-height: 1.1;
+  }
 }
 
 .v-block-image {

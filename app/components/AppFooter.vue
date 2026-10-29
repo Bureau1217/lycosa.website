@@ -8,6 +8,11 @@
       >
         <template #left >
           <h2>REJOINDRE L’AVENTURE&nbsp;?</h2>
+          <div class="v-app-footer__intro">
+            <p class="v-font-small">Lycosa Watches est en pleine création.</p>
+            <p class="v-font-small">Rejoignez notre communauté et suivez l’évolution de la marque&nbsp;: prototypes, choix de design, tests, premières séries.</p>
+            <p class="v-font-small">Votre montre n’est pas un accessoire. C’est une histoire. Écrivons‑la ensemble.</p>
+          </div>
           <BlockNewsletter
                   :remove-gap="true"
           />
@@ -59,11 +64,19 @@
 </template>
 
 <style lang="scss" scoped>
+.v-app-footer__intro {
+  margin-bottom: var(--v-font--lineheight--base);
+
+  > p:first-child { margin-top: 0; }
+}
+
 .v-app-footer {
   box-sizing: border-box;
   height: 100dvh;
   width: 100%;
   padding: var(--v-gutter) var(--v-gutter--half);
+  // Room for the fixed / sticky header above
+  padding-top: var(--v-header-height);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

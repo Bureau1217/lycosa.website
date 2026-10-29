@@ -13,6 +13,7 @@ onMounted(randomizeGlobalColorTheme)
     <div class="v-app__footer">
       <AppFooter/>
     </div>
+    <AppHeader />
   </div>
 </template>
 

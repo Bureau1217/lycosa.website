@@ -11,7 +11,7 @@
       >
         <img v-for="(item, index) in images"
              :key="index"
-             :src="item.image"
+             :src="srcFor(item)"
              :alt="item.alt || title"
              class="v-block-images-list__items__image"
              loading="lazy"
@@ -25,11 +25,24 @@
 
 
 <script setup lang="ts">
+import type { GlobalColorTheme } from '~/composables/useGlobalColorTheme'
+
+type Item = { image?: string, alt?: string } & Partial<Record<GlobalColorTheme, string>>
+
 defineProps<{
   title?: string
-  images?: { image?: string, alt?: string }[]
+  images?: Item[]
   removeGap?: boolean
 }>()
+
+// Theme is randomised client-side: keep the default image until mounted to avoid a hydration mismatch
+const { globalColorTheme } = useGlobalColorTheme()
+const mounted = ref(false)
+onMounted(() => { mounted.value = true })
+
+function srcFor(item: Item) {
+  return mounted.value ? themedImageSrc(item, globalColorTheme.value) : item.image
+}
 </script>
 
 
@@ -59,5 +72,15 @@ defineProps<{
   max-height: 45dvw;
   object-fit: contain;
   object-position: bottom;
+}
+
+// Small screens: every photo at the same height, width follows its format (the row scrolls)
+@media (max-width: 800px) {
+  .v-block-images-list__items__image {
+    height: 75vw;
+    width: auto;
+    max-height: none;
+    flex-shrink: 0;
+  }
 }
 </style>

@@ -163,8 +163,15 @@ removeGap: true
 ---
 images:
   - image: /images/blue-soldier-transparent-6000.jpg
+    color: blue
+    shop: /montres/bleu
   - image: /images/orange-soldier-transparent-6000.jpg
+    color: orange
+    shop: /montres/orange
   - image: /images/green-soldier-transparent-6000.jpg
+    color: green
+    shop: /montres/vert
+cta: Acheter
 title: Nos montres
 ---
 ::
@@ -174,7 +181,11 @@ title: Nos montres
 images:
   - image: /images/back-__blue__-6000.jpg
   - image: /images/pic22-6000.jpg
+    green: /images/pic15-6000.jpg
+    orange: /images/pic24-6000.jpg
   - image: /images/blue-6000.jpg
+    green: /images/green-6000.jpg
+    orange: /images/orange-6000.jpg
 ---
 ::
 
@@ -247,9 +258,4 @@ images:
 ::
 
 ::block-image{remove-gap image="/images/pic22-6000.jpg"}
-Lycosa Watches est en pleine création.
-
-Rejoignez notre communauté et suivez l’évolution de la marque : prototypes, choix de design, tests, premières séries.
-
-Votre montre n’est pas un accessoire. C’est une histoire. Écrivons‑la ensemble.
 ::

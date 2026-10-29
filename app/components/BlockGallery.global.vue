@@ -32,19 +32,41 @@
         </div>
       </div>
 
+      <a v-if="shopLink"
+         :href="shopLink"
+         class="v-block-gallery__cta"
+      >{{ cta || 'Acheter' }} &rarr;</a>
+
     </section>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
+import type { GlobalColorTheme } from '~/composables/useGlobalColorTheme'
 
 const props = defineProps<{
   title?: string
-  images?: { image?: string }[]
+  images?: { image?: string, shop?: string, color?: GlobalColorTheme }[]
   removeGap?: boolean
+  cta?: string
 }>()
 
+const { shopUrl } = useRuntimeConfig().public
+
+// Each image can point to its page in the shop (e.g. shop: /montres/bleu)
+const shopLink = computed(() => {
+  const path = props.images?.[index.value]?.shop
+  return path ? `${shopUrl}${path}` : null
+})
+
 const index = ref(0)
+
+// Start on the watch matching the site colour theme (randomised on load)
+const { globalColorTheme } = useGlobalColorTheme()
+watch(globalColorTheme, (theme) => {
+  const i = props.images?.findIndex(item => item.color === theme) ?? -1
+  if (i >= 0) index.value = i
+}, { immediate: true })
 
 const currentImage = computed(() => props.images?.[index.value]?.image)
 
@@ -56,19 +78,37 @@ const mainColor = computed(() => {
   return 'v-gallery--main-color--green'
 })
 
+// Browsing the watches switches the site colour theme (and every themed image with it)
+function goTo(i: number) {
+  index.value = i
+  const color = props.images?.[i]?.color
+  if (color) globalColorTheme.value = color
+}
+
 function prev() {
   if (!props.images?.length) return
-  index.value = (index.value - 1 + props.images.length) % props.images.length
+  goTo((index.value - 1 + props.images.length) % props.images.length)
 }
 
 function next() {
   if (!props.images?.length) return
-  index.value = (index.value + 1) % props.images.length
+  goTo((index.value + 1) % props.images.length)
 }
 </script>
 
 <style lang="scss" scoped >
 @use '~/assets/style/main';
+
+.v-block-gallery__cta {
+  @extend .v-font-small;
+  align-self: center;
+  margin-top: var(--v-gutter);
+  margin-bottom: 0;
+  color: var(--v-color-black);
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 1;
+}
 
 .v-block-gallery {
   position: relative;
@@ -105,6 +145,24 @@ function next() {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+}
+
+// Small screens: the watch takes the full width, so Previous / Next go below it
+@media (max-width: 800px) {
+  .v-block-gallery__viewport {
+    flex-direction: column;
+  }
+
+  .v-block-gallery__viewport__image {
+    flex: 1;
+    min-height: 0;
+  }
+
+  .v-block-gallery__viewport__nav {
+    position: static;
+    height: auto;
+    margin-top: var(--v-gutter);
+  }
 }
 
 .v-block-gallery__prev,
